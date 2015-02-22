@@ -22,14 +22,13 @@ These dotfiles are intended for use on OS X.
   - `-o`: omit group name (mostly boring anyway)
   - the sed pipe removes the total blocks line
 - `mkdir` becomes `mkdir -pv`: mkdir will create intermediate directories if necessary, and list folders as they're created
-- `nano` becomes `nano -BScim`:
+- `nano` becomes `nano -BOScim`:
   - `-B`: When saving a file, back up the previous version of it to the current filename suffixed with a ~.
   - `-O`: Use the blank line below the status bar as editing space.
   - `-S`: Enable smooth scrolling.
   - `-c`: Constantly show cursor position.
   - `-i`: Autoindent new lines.
   - `-m`: Enable mouse support.
-
 
 ### Git
 - `a`: git add

@@ -2,15 +2,15 @@ These dotfiles are intended for use on OS X.
 
 ### Bash
 ##### New commands
-- `f`: opens the current directory in Finder
+- `..`, `...`, `.[3,4,5,6]`: extensions of cd, goes up 1-6 levels
 - `c`: clears the Terminal window
 - `dir`: alias for ls (couldn't get out of the habit)
-- `rmi`: interactive rm
-- `..`, `...`, `.[3,4,5,6]`: extensions of cd, goes up 1-6 levels
+- `f`: opens the current directory in Finder
+- `ffe`: find a file that ends with a given string
+- `ffs`: find a file that starts with a given string
 - `lr`: recursive ls
 - `qf`: quickly find a file
-- `ffs`: find a file that starts with a given string
-- `ffe`: find a file that ends with a given string
+- `rmi`: interactive rm
 
 ##### Changed commands
 - `ls` becomes `ls -AFGhlo`:
@@ -24,21 +24,21 @@ These dotfiles are intended for use on OS X.
 - `rm` becomes `rm --preserve-root`: makes rm a little less dangerous
 - `nano` becomes `nano -BScim`:
   - `-B`: When saving a file, back up the previous version of it to the current filename suffixed with a ~.
-  - `-S`: Enable smooth scrolling.
   - `-O`: Use the blank line below the status bar as editing space.
+  - `-S`: Enable smooth scrolling.
   - `-c`: Constantly show cursor position.
   - `-i`: Autoindent new lines.
   - `-m`: Enable mouse support.
 
 
 ### Git
-- `co`: git checkout
-- `ci`: git commit
-- `st`: git status
-- `br`: git branch
 - `a`: git add
-- `p`: git push
 - `amend`: git commit --amend
+- `br`: git branch
+- `ci`: git commit
+- `co`: git checkout
 - `hist`: improvements as suggested by Git Immersion
+- `p`: git push
+- `st`: git status
 - sets default editor to Sublime Text
 - sets user info (change this unless you want to impersonate me)

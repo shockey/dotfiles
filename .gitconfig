@@ -11,3 +11,7 @@
 
 [core]
 	editor = "subl -n -w"
+	
+[user]
+	name = "Kyle Shockey"
+	email = "kyleshockey1@gmail.com"

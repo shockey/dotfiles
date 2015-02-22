@@ -10,4 +10,4 @@
   a = add
 
 [core]
-	editor = 'subl -n -w'
+	editor = "subl -n -w"

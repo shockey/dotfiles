@@ -7,6 +7,10 @@ These dotfiles are intended for use on OS X.
 - `dir`: alias for ls (couldn't get out of the habit)
 - `rmi`: interactive rm
 - `..`, `...`, `.[3,4,5,6]`: extensions of cd, goes up 1-6 levels
+- `lr`: recursive ls
+- `qf`: quickly find a file
+- `ffs`: find a file that starts with a given string
+- `ffe`: find a file that ends with a given string
 
 ##### Changed commands
 - `ls` becomes `ls -AFGhlo`:

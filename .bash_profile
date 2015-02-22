@@ -2,12 +2,12 @@
 
 export EDITOR=/usr/bin/nano
 
-alias ls='ls -G'
+alias ls="ls -AFGhlo"
 alias f='open -a Finder ./'
 alias c='clear'
 alias mkdir='mkdir -pv'
 alias rmi='rm -I'
-alias rm='rm --preserve-root' # makes rm less aggressive
+alias rm='rm --preserve-root' # makes rm less dangerous
 alias dir='ls' # don't judge
 alias ~='cd ~/'
 

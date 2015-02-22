@@ -3,7 +3,12 @@
 export EDITOR='/usr/bin/nano -BSOcim'
 
 # command changes
-alias ls="ls -AFGhlo"
+# alias ls="ls -AFGhlo"
+lsreplacement () {
+	var="$(script -q /dev/null ls -AFGhlo $1 | sed "1 d" )"
+	echo "$var" 
+}
+alias ls="lsreplacement"
 alias mkdir='mkdir -pv'
 alias rm='rm --preserve-root' # makes rm less dangerous
 alias nano='nano -BSOcim'

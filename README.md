@@ -32,10 +32,12 @@ These dotfiles are intended for use on OS X.
 
 
 ### Git
-- `co`: shortcut for checkout
-- `ci`: shortcut for commit
-- `st`: shortcut for status
-- `br`: shortcut for branch
+- `co`: git checkout
+- `ci`: git commit
+- `st`: git status
+- `br`: git branch
 - `a`: shortcut for add
 - `hist`: improvements as suggested by Git Immersion
+- `p`: git push
 - sets default editor to Sublime Text
+- sets user info (change this unless you want to impersonate me)

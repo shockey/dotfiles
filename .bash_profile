@@ -27,7 +27,7 @@ alias dir='ls' # don't judge
 alias rmi='rm -I'
 alias f='open -a Finder ./'
 alias c='clear'
-alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'' | less'
+alias lr='/bin/ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'' | less'
 alias qf='find . -name '
 ffs () { /usr/bin/find . -name "$@"'*' ; }
 ffe () { /usr/bin/find . -name '*'"$@" ; }

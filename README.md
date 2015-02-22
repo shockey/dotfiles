@@ -36,8 +36,9 @@ These dotfiles are intended for use on OS X.
 - `ci`: git commit
 - `st`: git status
 - `br`: git branch
-- `a`: shortcut for add
-- `hist`: improvements as suggested by Git Immersion
+- `a`: git add
 - `p`: git push
+- `amend`: git commit --amend
+- `hist`: improvements as suggested by Git Immersion
 - sets default editor to Sublime Text
 - sets user info (change this unless you want to impersonate me)

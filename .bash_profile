@@ -10,7 +10,6 @@ lsreplacement () {
 }
 alias ls="lsreplacement"
 alias mkdir='mkdir -pv'
-alias rm='rm --preserve-root' # makes rm less dangerous
 alias nano='nano -BSOcim'
 
 d() { builtin cd "$@"; ll; }
@@ -24,7 +23,7 @@ alias .5='cd ../../../../../'
 alias .6='cd ../../../../../../'  
 alias ~='cd ~/'
 alias dir='ls' # don't judge
-alias rmi='rm -I'
+alias rmi='rm -i'
 alias f='open -a Finder ./'
 alias c='clear'
 alias lr='/bin/ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'' | less'

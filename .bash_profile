@@ -30,3 +30,5 @@ alias lr='/bin/ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//-
 alias qf='find . -name '
 ffs () { /usr/bin/find . -name "$@"'*' ; }
 ffe () { /usr/bin/find . -name '*'"$@" ; }
+peek () { height=$(tput lines) ; head -n $((height - 2)) $1 ; }
+peekt () { height=$(tput lines) ; tail -n $((height - 3)) $1 ; } # acts strange sometimes, needs more testing

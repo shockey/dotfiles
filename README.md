@@ -11,6 +11,8 @@ These dotfiles are intended for use on OS X.
 - `lr`: recursive ls
 - `qf`: quickly find a file
 - `rmi`: interactive rm
+- `peek`: prints first *n* lines of a file, where *n* is the number of lines displayable
+- `peekt`: prints last *n* lines of a file, where *n* is the number of lines displayable
 
 ##### Changed commands
 - `ls` becomes `ls -AFGhlo`, with a pipe to sed:

@@ -13,7 +13,7 @@
   amend = commit --amend
 
 [core]
-	editor = "subl -n -w"
+	editor = "nano"
 	
 [user]
 	name = "Kyle Shockey"

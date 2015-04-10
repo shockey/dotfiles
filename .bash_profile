@@ -1,6 +1,6 @@
 # dest: ~/.bash_profile
 
-export EDITOR='/usr/bin/nano -BSOcim'
+export EDITOR='/usr/bin/nano -SOcim'
 
 # command changes
 # alias ls="ls -AFGhlo"

@@ -35,6 +35,7 @@ These dotfiles are intended for use on OS X.
 - `br`: git branch
 - `ci`: git commit
 - `co`: git checkout
+- `cl`: git clone
 - `hist`: improvements as suggested by Git Immersion
 - `p`: git push
 - `st`: git status

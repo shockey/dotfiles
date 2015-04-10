@@ -10,7 +10,7 @@ lsreplacement () {
 }
 alias ls="lsreplacement"
 alias mkdir='mkdir -pv'
-alias nano='nano -BSOcim'
+alias nano='nano -SOcim'
 
 d() { builtin cd "$@"; ll; }
 

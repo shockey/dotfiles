@@ -21,7 +21,9 @@ These dotfiles are intended for use on OS X.
   - `-l`: long format
   - `-o`: omit group name (mostly boring anyway)
   - the sed pipe removes the total blocks line
-- `mkdir` becomes `mkdir -pv`: mkdir will create intermediate directories if necessary, and list folders as they're created
+- `mkdir` becomes `mkdir -pv`: 
+  - `-p`: create intermediate directories, if necessary
+  - `-v`: list folders as they're created
 - `nano` becomes `nano -OScim`:
   - `-O`: Use the blank line below the status bar as editing space.
   - `-S`: Enable smooth scrolling.

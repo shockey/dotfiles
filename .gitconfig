@@ -13,7 +13,7 @@
   amend = commit --amend
 
 [core]
-	editor = "nano"
+	editor = "nano -OScim"
 	
 [user]
 	name = "Kyle Shockey"

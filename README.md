@@ -40,6 +40,7 @@ These dotfiles are intended for use on OS X.
 - `cl`: git clone
 - `hist`: improvements as suggested by Git Immersion
 - `p`: git push
+- `pu`: git pull
 - `st`: git status
 - sets default editor to Nano
 - sets user info (change this unless you want to impersonate me)

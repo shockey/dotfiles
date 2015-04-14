@@ -12,7 +12,7 @@ alias ls="lsreplacement"
 alias mkdir='mkdir -pv'
 alias nano='nano -SOcim'
 
-d() { builtin cd "$@"; ll; }
+d() { builtin cd "$@"; ls; }
 
 # new commands
 alias ..='cd ../'                           

@@ -39,6 +39,7 @@ These dotfiles are intended for use on OS X.
 - `ci`: git commit
 - `co`: git checkout
 - `cl`: git clone
+- `di`: git diff
 - `hist`: improvements as suggested by Git Immersion
 - `p`: git push
 - `pu`: git pull

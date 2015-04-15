@@ -4,6 +4,7 @@ These dotfiles are intended for use on OS X.
 ##### New commands
 - `..`, `...`, `.[3,4,5,6]`: extensions of cd, goes up 1-6 levels
 - `c`: clears the Terminal window
+- `d`: cd shortcut, runs ls after changing directories
 - `dir`: alias for ls (couldn't get out of the habit)
 - `f`: opens the current directory in Finder
 - `ffe`: find a file that ends with a given string

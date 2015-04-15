@@ -1,6 +1,6 @@
 # dest: ~/.bash_profile
 
-export EDITOR='/usr/bin/nano -SOcim'
+export EDITOR='/usr/bin/nano -OScim'
 
 # command changes
 # alias ls="ls -AFGhlo"
@@ -29,5 +29,6 @@ alias c='clear'
 alias lr='/bin/ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'' | less'
 alias qf='find . -name '
 alias g='git'
+alias s='subl'
 ffs () { /usr/bin/find . -name "$@"'*' ; }
 ffe () { /usr/bin/find . -name '*'"$@" ; }

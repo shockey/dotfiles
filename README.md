@@ -12,6 +12,7 @@ These dotfiles are intended for use on OS X.
 - `lr`: recursive ls
 - `qf`: quickly find a file
 - `rmi`: interactive rm
+- `s`: shortcut for subl
 
 ##### Changed commands
 - `ls` becomes `ls -AFGhlo`, with a pipe to sed:

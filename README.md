@@ -9,6 +9,7 @@ These dotfiles are intended for use on OS X.
 - `f`: opens the current directory in Finder
 - `ffe`: find a file that ends with a given string
 - `ffs`: find a file that starts with a given string
+- `h`: displays last ten commands ran
 - `lr`: recursive ls
 - `qf`: quickly find a file
 - `rmi`: interactive rm

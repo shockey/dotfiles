@@ -25,6 +25,7 @@ alias c='clear'
 alias dir='ls' # don't judge
 alias f='open -a Finder ./'
 alias g='git'
+alias h='history | tail -f'
 alias lr='/bin/ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'' | less'
 alias qf='find . -name '
 alias rmi='rm -i'

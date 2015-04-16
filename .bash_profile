@@ -25,10 +25,11 @@ alias c='clear'
 alias dir='ls' # don't judge
 alias f='open -a Finder ./'
 alias g='git'
-alias h='history | tail -f'
+alias h='history | tail -n 11 | head -n 10'
 alias lr='/bin/ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'' | less'
 alias qf='find . -name '
 alias rmi='rm -i'
+alias rp='source ~/dotfiles/.bash_profile' # refresh profile
 alias s='subl'
 alias ~='cd ~/'
 ffs () { /usr/bin/find . -name "$@"'*' ; }

@@ -13,6 +13,7 @@ These dotfiles are intended for use on OS X.
 - `lr`: recursive ls
 - `qf`: quickly find a file
 - `rmi`: interactive rm
+- `rp`: refresh profile (reloads dotfiles' .bash_profile)
 - `s`: shortcut for subl
 
 ##### Changed commands

@@ -2,6 +2,7 @@ These dotfiles are intended for use on OS X.
 
 ### Bash
 ##### New commands
+- `[1,2,3,4,5]`: runs the command that was *n* commands ago, works for 1-5.
 - `..`, `...`, `.[3,4,5,6]`: extensions of cd, goes up 1-6 levels
 - `~`: changes directory to home directory of current user
 - `c`: clears the terminal window

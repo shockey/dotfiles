@@ -3,18 +3,20 @@ These dotfiles are intended for use on OS X.
 ### Bash
 ##### New commands
 - `..`, `...`, `.[3,4,5,6]`: extensions of cd, goes up 1-6 levels
-- `c`: clears the Terminal window
-- `d`: cd shortcut, runs ls after changing directories
+- `~`: changes directory to home directory of current user
+- `c`: clears the terminal window
+- `d`: cd shortcut, lists contents of the directory after changing 
 - `dir`: alias for ls (couldn't get out of the habit)
-- `f`: opens the current directory in Finder
+- `f`: opens a directory in Finder.app
+- `f.`: opens the current directory in Finder.app
 - `fuck`: [TheFuck](https://github.com/nvbn/thefuck)
-- `ffe`: find a file that ends with a given string
-- `ffs`: find a file that starts with a given string
+- `ffe`: find a file that ends with a given value within the current directory
+- `ffs`: find a file that starts with a given value within the current directory
 - `h`: displays last ten commands ran
 - `lr`: recursive ls
-- `n`: nano
-- `qf`: quickly find a file
-- `rmi`: interactive rm
+- `n`: nano (also see "Changed Commands")
+- `qf`: quickly find a file with the exact name given within the current directory
+- `rmi`: interactive rmf
 - `rp`: refresh profile (reloads dotfiles' .bash_profile)
 - `s`: shortcut for Sublime Text
 - `s.`: opens current directory in Sublime Text

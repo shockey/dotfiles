@@ -7,14 +7,17 @@ These dotfiles are intended for use on OS X.
 - `d`: cd shortcut, runs ls after changing directories
 - `dir`: alias for ls (couldn't get out of the habit)
 - `f`: opens the current directory in Finder
+- `fuck`: [TheFuck](https://github.com/nvbn/thefuck)
 - `ffe`: find a file that ends with a given string
 - `ffs`: find a file that starts with a given string
 - `h`: displays last ten commands ran
 - `lr`: recursive ls
+- `n`: nano
 - `qf`: quickly find a file
 - `rmi`: interactive rm
 - `rp`: refresh profile (reloads dotfiles' .bash_profile)
-- `s`: shortcut for subl
+- `s`: shortcut for Sublime Text
+- `s.`: opens current directory in Sublime Text
 
 ##### Changed commands
 - `ls` becomes `ls -AFGhlo`, with a pipe to sed:

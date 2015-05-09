@@ -34,7 +34,8 @@ These dotfiles are intended for use on OS X.
 - `mkdir` becomes `mkdir -pv`: 
   - `-p`: create intermediate directories, if necessary
   - `-v`: list folders as they're created
-- `nano` becomes `nano -OScim`:
+- `nano` becomes `nano -AOScim`:
+  - `-A`: Make the Home key smarter (Fn + ⃪ is equivalent to Home on MacBooks!)
   - `-O`: Use the blank line below the status bar as editing space.
   - `-S`: Enable smooth scrolling.
   - `-c`: Constantly show cursor position.

@@ -40,6 +40,7 @@ alias qf='find . -name '
 alias rmi='rm -i'
 alias rp='source ~/dotfiles/.bash_profile' # refresh profile
 alias s='subl'
+alias ss='python -m SimpleHTTPServer'
 alias s.='subl ./'
 alias ~='cd ~/'
 ffs () { /usr/bin/find . -name "$@"'*' ; }

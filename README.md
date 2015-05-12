@@ -13,6 +13,8 @@ These dotfiles are intended for use on OS X.
 - `fuck`: [TheFuck](https://github.com/nvbn/thefuck)
 - `ffe`: find a file that ends with a given value within the current directory
 - `ffs`: find a file that starts with a given value within the current directory
+- `gpom`: equivalent to `git push origin master`
+- `gysnc`: equivalent to running `git pull upstream master` and then `git push origin master`
 - `h`: displays last ten commands ran
 - `lr`: recursive ls
 - `n`: nano (also see "Changed Commands")

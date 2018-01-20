@@ -11,7 +11,7 @@
   hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
   a = add
   p = push
-  pu = pull
+  pl = pull
   amend = commit --amend
 
 [core]

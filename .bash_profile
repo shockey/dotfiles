@@ -43,9 +43,15 @@ alias rmi='rm -i'
 alias rp='source ~/dotfiles/.bash_profile' # refresh profile
 alias s='subl'
 alias ss='python -m SimpleHTTPServer .'
-alias s.='subl ./'
+alias stdts='date -u "+%F-%H%M%SZ"'
 alias ~='cd ~/'
 ffs () { /usr/bin/find . -name "$@"'*' ; }
 ffe () { /usr/bin/find . -name '*'"$@" ; }
 
 export PATH="$HOME/.cargo/bin:$PATH"
+
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+. $(brew --prefix)/etc/bash_completion
+fi
+
+#### Machine-specific configs, DO NOT COMMIT CHANGES BELOW THIS LINE

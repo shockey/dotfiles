@@ -54,9 +54,6 @@ SPACESHIP_EXIT_CODE_SHOW=true
 SPACESHIP_GIT_SYMBOL=""
 SPACESHIP_GIT_STATUS_COLOR=202
 
-autoload -U promptinit; promptinit
-prompt spaceship
-
 # Share a fortune when the shell starts
 fortune
 

@@ -1,23 +1,42 @@
 # dest: ~/.gitconfig
 
+[core]
+	editor = vim
+[user]
+	name = Kyle Shockey
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+
 # Git Immersion aliases
 [alias]
-  co = checkout
-  cob = checkout -b
-  ci = commit
-  st = status
-  br = branch
-  cl = clone
-  di = diff
-  hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
-  a = add
-  p = push
-  pl = pull
-  amend = commit --amend
-
-[core]
-	editor = "nano -OScim"
-	
-[user]
-	name = "Kyle Shockey"
-	email = "kyleshockey1@gmail.com"
+	co = checkout
+	com = checkout master
+	bc = checkout -b
+	ci = commit
+	st = status
+	br = branch
+	cl = clone
+	di = diff
+	dis = diff --staged
+	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+	a = add
+	ph = push
+	pl = pull
+	plom = pull origin master
+	plum = pull upstream master
+	amd = commit --amend
+	rsh = reset --hard
+	s = status
+	st = stash push --include-untracked
+	sp = stash pop
+	sd = stash drop
+	uf = "!f() { git fetch $1 --prune; git merge --ff-only $1/$2 || git rebase --preserve-merges $1/$2; }; f"
+	ufom = "!f() { git fetch origin --prune; git merge --ff-only origin/master || git rebase --preserve-merges origin/master; }; f"
+	ufum = "!f() { git fetch upstream --prune; git merge --ff-only upstream/master || git rebase --preserve-merges upstream/master; }; f"
+[push]
+	default = current
+[commit]
+	gpgsign = true

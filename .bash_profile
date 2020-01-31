@@ -50,9 +50,9 @@ ffe () { /usr/bin/find . -name '*'"$@" ; }
 
 export PATH="$HOME/.cargo/bin:$PATH"
 
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-. $(brew --prefix)/etc/bash_completion
-fi
+# if [ -f $(brew --prefix)/etc/bash_completion ]; then
+# . $(brew --prefix)/etc/bash_completion
+# fi
 
 # map npm bin directories to $PATH (https://gist.github.com/airtonix/9925531)
 export PATH=$HOME/bin:$PATH
@@ -75,7 +75,7 @@ fi
 # Load nvm with bash completions
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion  # disabled, see https://github.com/robbyrussell/oh-my-zsh/issues/3356#issuecomment-234727644
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion  # disabled, see https://github.com/robbyrussell/oh-my-zsh/issues/3356#issuecomment-234727644
 
 # Use Postgres.app pg binaries instead of macOS builtins
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"

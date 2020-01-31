@@ -81,3 +81,4 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 
 #### Machine-specific configs, DO NOT COMMIT CHANGES BELOW THIS LINE
+

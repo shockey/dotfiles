@@ -65,4 +65,19 @@ function build_path {
 
 PROMPT_COMMAND=build_path
 
+# Fuck, with some perf enhancements from https://github.com/nvbn/thefuck/issues/859 
+if command -v thefuck >/dev/null 2>&1; then
+  fuck() {
+    eval "$(thefuck --alias)" && fuck
+  }
+fi
+
+# Load nvm with bash completions
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion  # disabled, see https://github.com/robbyrussell/oh-my-zsh/issues/3356#issuecomment-234727644
+
+# Use Postgres.app pg binaries instead of macOS builtins
+export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
+
 #### Machine-specific configs, DO NOT COMMIT CHANGES BELOW THIS LINE

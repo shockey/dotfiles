@@ -7,7 +7,7 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="spaceship"
 
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-z)
+plugins=(git zsh-z zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -20,9 +20,6 @@ export GPG_TTY=$(tty)
 
 ### Import my bash profile
 source ~/.bash_profile
-
-# ZSH Autosuggest
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Spaceship zsh prompt custom options
 SPACESHIP_PROMPT_ORDER=(

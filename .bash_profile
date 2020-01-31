@@ -54,4 +54,15 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 . $(brew --prefix)/etc/bash_completion
 fi
 
+# map npm bin directories to $PATH (https://gist.github.com/airtonix/9925531)
+export PATH=$HOME/bin:$PATH
+
+ORIGINAL_PATH=$PATH
+
+function build_path {
+	export PATH=$(npm bin):$ORIGINAL_PATH
+}
+
+PROMPT_COMMAND=build_path
+
 #### Machine-specific configs, DO NOT COMMIT CHANGES BELOW THIS LINE

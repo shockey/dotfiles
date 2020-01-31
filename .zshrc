@@ -32,9 +32,6 @@ if command -v thefuck >/dev/null 2>&1; then
   }
 fi
 
-### Import `npm bin` path to PATH
-export PATH="$PATH:./node_modules/.bin"
-
 # Load nvm with bash completions
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

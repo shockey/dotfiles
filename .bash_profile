@@ -29,7 +29,6 @@ alias c='clear'
 alias dir='ls' # don't judge
 alias f='open -a Finder'
 alias f.='open -a Finder ./'
-alias fuck='$(thefuck $(fc -ln -1))'
 alias g='git'
 alias gpom='g p origin master'
 alias gsync='g pu --rebase upstream master && g p origin master -f'
@@ -67,7 +66,7 @@ PROMPT_COMMAND=build_path
 
 # Fuck, with some perf enhancements from https://github.com/nvbn/thefuck/issues/859 
 if command -v thefuck >/dev/null 2>&1; then
-  fuck() {
+  fuck () {
     eval "$(thefuck --alias)" && fuck
   }
 fi

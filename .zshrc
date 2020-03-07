@@ -55,7 +55,7 @@ SPACESHIP_GIT_SYMBOL=""
 SPACESHIP_GIT_STATUS_COLOR=202
 
 # Share a fortune when the shell starts
-fortune
+# fortune
 
 #### Machine-specific configs, DO NOT COMMIT CHANGES BELOW THIS LINE
 

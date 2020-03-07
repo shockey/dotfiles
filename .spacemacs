@@ -57,6 +57,7 @@ values."
      ;; #### custom below this line
      osx
      javascript
+     react
      evil-commentary
      )
    ;; List of additional packages that will be installed without being

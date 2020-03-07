@@ -372,6 +372,6 @@ you should place your code here."
   )
 (my-setup-indent 2)
 
-# add node_modules to PATH for flycheck+eslint, et al
+;; add node_modules to PATH for flycheck+eslint, et al
 (eval-after-load 'js2-mode
   '(add-hook 'js2-mode-hook #'add-node-modules-path))

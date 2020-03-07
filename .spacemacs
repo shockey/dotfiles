@@ -365,6 +365,8 @@ you should place your code here."
   (setq javascript-indent-level n) ; javascript-mode
   (setq js-indent-level n) ; js-mode
   (setq js2-basic-offset n) ; js2-mode, in latest js2-mode, it's alias of js-indent-level
+  (setq js2-mode-show-parse-errors nil) 
+  (setq js2-mode-show-strict-warnings nil)
   (setq web-mode-markup-indent-offset n) ; web-mode, html tag in html file
   (setq web-mode-css-indent-offset n) ; web-mode, css in html file
   (setq web-mode-code-indent-offset n) ; web-mode, js code in html file

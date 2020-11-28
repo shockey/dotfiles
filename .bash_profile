@@ -1,6 +1,6 @@
 # dest: ~/.bash_profile
 
-export EDITOR='/usr/bin/nano -OScim'
+export EDITOR='vim'
 
 # command changes
 # alias lss="ls -AFGhlo"
@@ -36,6 +36,7 @@ alias h='history | tail -n 11 | head -n 10'
 alias lr='/bin/ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'' | less'
 alias n='npm'
 alias na='nano'
+alias nmt='nodemcu-tool'
 alias nr='npm run'
 alias qf='find . -name '
 alias rmi='rm -i'
@@ -65,11 +66,11 @@ function build_path {
 PROMPT_COMMAND=build_path
 
 # Fuck, with some perf enhancements from https://github.com/nvbn/thefuck/issues/859 
-if command -v thefuck >/dev/null 2>&1; then
-  fuck () {
-    eval "$(thefuck --alias)" && fuck
-  }
-fi
+# if command -v thefuck >/dev/null 2>&1; then
+#   fuck () {
+#     eval "$(thefuck --alias)" && fuck
+#   }
+# fi
 
 # Load nvm with bash completions
 export NVM_DIR="$HOME/.nvm"

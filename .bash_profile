@@ -11,6 +11,7 @@ lsreplacement () {
 alias lss="lsreplacement"
 alias mkdir='mkdir -pv'
 alias nano='nano -ASOcim'
+alias agq='ag -Q'
 
 # new commands
 alias ...='cd ../../'                       

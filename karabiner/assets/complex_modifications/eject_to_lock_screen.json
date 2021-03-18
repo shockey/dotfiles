@@ -1,0 +1,25 @@
+{
+  "title": "Lock Screen",
+  "rules": [
+    {
+      "description": "Eject key to Lock Screen (macOS 10.13+)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "l84"
+          },
+          "to": [
+            {
+              "key_code": "q",
+              "modifiers": [
+                "left_control",
+                "left_command"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

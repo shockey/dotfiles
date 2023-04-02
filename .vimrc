@@ -11,4 +11,7 @@ Plug 'mxw/vim-jsx'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
+" Better indentation support
+Plug 'tpope/vim-sleuth'
+
 call plug#end()

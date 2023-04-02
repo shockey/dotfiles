@@ -49,7 +49,6 @@ alias ~='cd ~/'
 ffs () { /usr/bin/find . -name "$@"'*' ; }
 ffe () { /usr/bin/find . -name '*'"$@" ; }
 
-export PATH="$HOME/.cargo/bin:$PATH"
 
 # if [ -f $(brew --prefix)/etc/bash_completion ]; then
 # . $(brew --prefix)/etc/bash_completion

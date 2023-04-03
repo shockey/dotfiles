@@ -1,17 +1,4 @@
-# dest: ~/.bash_profile
-
 export EDITOR='vim'
-
-# command changes
-# alias lss="ls -AFGhlo"
-lsreplacement () {
-	var="$(script -q /dev/null ls -AFGhlo $1 | sed "1 d" )"
-	echo "$var" 
-}
-alias lss="lsreplacement"
-alias mkdir='mkdir -pv'
-alias nano='nano -ASOcim'
-alias agq='ag -Q'
 
 # new commands
 alias ...='cd ../../'                       
@@ -20,39 +7,32 @@ alias .3='cd ../../../'
 alias .4='cd ../../../../'                  
 alias .5='cd ../../../../../'               
 alias .6='cd ../../../../../../' 
-# old: 'history | tail -n 2 | head -n 1 | cut -c 8- | '
 alias 1='$(fc -n -l -1 -1)'
 alias 2='$(fc -n -l -2 -2)'
 alias 3='$(fc -n -l -3 -3)'
 alias 4='$(fc -n -l -4 -4)'
 alias 5='$(fc -n -l -5 -5)'
-alias c='clear'
-alias dir='ls' # don't judge
 alias f='open -a Finder'
 alias f.='open -a Finder ./'
+ffs () { /usr/bin/find . -name "$@"'*' ; }
+ffe () { /usr/bin/find . -name '*'"$@" ; }
 alias g='git'
-alias gpom='g p origin master'
-alias gsync='g pu --rebase upstream master && g p origin master -f'
+alias gpom='git push origin master'
+alias gsync='git pull --rebase origin && git push origin'
 alias h='history | tail -n 11 | head -n 10'
+alias isoz='date -u "+%F-%H%M%SZ"'
 alias lr='/bin/ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'' | less'
-alias n='npm'
-alias na='nano'
+alias lss='ls -AFGhlo $1 | sed "1 d"'
 alias nmt='nodemcu-tool'
 alias nr='npm run'
 alias qf='find . -name '
-alias rmi='rm -i'
 alias rp='source ~/dotfiles/.bash_profile' # refresh profile
-alias s='subl'
-alias ss='python -m SimpleHTTPServer .'
-alias stdts='date -u "+%F-%H%M%SZ"'
-alias ~='cd ~/'
-ffs () { /usr/bin/find . -name "$@"'*' ; }
-ffe () { /usr/bin/find . -name '*'"$@" ; }
+alias ss='python3 -m http.server 9000 .'
 
 
-# if [ -f $(brew --prefix)/etc/bash_completion ]; then
-# . $(brew --prefix)/etc/bash_completion
-# fi
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  $(brew --prefix)/etc/bash_completion
+fi
 
 # map npm bin directories to $PATH (https://gist.github.com/airtonix/9925531)
 export PATH=$HOME/bin:$PATH
@@ -64,13 +44,6 @@ function build_path {
 }
 
 PROMPT_COMMAND=build_path
-
-# Fuck, with some perf enhancements from https://github.com/nvbn/thefuck/issues/859 
-# if command -v thefuck >/dev/null 2>&1; then
-#   fuck () {
-#     eval "$(thefuck --alias)" && fuck
-#   }
-# fi
 
 # Load nvm with bash completions
 export NVM_DIR="$HOME/.nvm"

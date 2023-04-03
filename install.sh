@@ -15,7 +15,19 @@ for filename in '.bash_profile' '.gitconfig' '.gitignore' '.hyper.js' '.spacemac
     ln -vf `pwd`/$filename ~/$filename
   done
 
+for dirname in '.config' ;
+do
+    if [ -e ~/$dirname ] && [ ! -L ~/$dirname ]; then
+        # if a file or directory exists, and isn't our symlink... make a backup
+        mv -v ~/${dirname} ~/${dirname}_before_first_dotfile_sync
+    fi
+
+    # symlink ~ to our version
+    ln -vsf `pwd`/$dirname ~/$dirname
+done
+
 # Dependencies
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"

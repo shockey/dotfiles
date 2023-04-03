@@ -55,3 +55,5 @@ export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 
 #### Machine-specific configs, DO NOT COMMIT CHANGES BELOW THIS LINE
 
+# Brew
+PATH="/usr/local/bin:$PATH"

@@ -1,7 +1,8 @@
 [core]
 	editor = vim
 [user]
-	name = Kyle Shockey
+  name = Kyle Shockey
+	email = "kyleshockey@gmail.com"
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f
@@ -39,6 +40,3 @@
 	insteadOf = https://github.com/
 
 #### Machine-specific configs, DO NOT COMMIT CHANGES BELOW THIS LINE
-
-[user]
-	email = "kyleshockey@gmail.com"

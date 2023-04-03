@@ -9,8 +9,6 @@ ZSH_THEME="spaceship"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git zsh-z zsh-autosuggestions)
 
-source $ZSH/oh-my-zsh.sh
-
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
@@ -53,6 +51,10 @@ SPACESHIP_PACKAGE_SYMBOL=""
 SPACESHIP_EXIT_CODE_SHOW=true
 SPACESHIP_GIT_SYMBOL=""
 SPACESHIP_GIT_STATUS_COLOR=202
+
+# Unlimited scrollback
+HISTSIZE=999999999
+SAVEHIST=$HISTSIZE
 
 # Share a fortune when the shell starts
 # fortune

@@ -31,6 +31,8 @@ values."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(rust
+     typescript
+     go
      ansible
      yaml
      csv
@@ -56,13 +58,14 @@ values."
             shell-default-position 'bottom)
      spell-checking
      syntax-checking
-     ;; version-control
+     version-control
      ;; #### custom below this line
      osx
      (javascript :variables
                  node-add-modules-path t)
      react
      evil-commentary
+     lsp
      )
    ;; List of additional packages that will be installed without being wrapped
    ;; in a layer (generally the packages are installed only and should still be
@@ -414,7 +417,7 @@ It should only modify the values of Spacemacs settings."
    ;;   :size-limit-kb 1000)
    ;; When used in a plist, `visual' takes precedence over `relative'.
    ;; (default nil)
-   dotspacemacs-line-numbers nil
+   dotspacemacs-line-numbers 't
 
    ;; Code folding method. Possible values are `evil', `origami' and `vimish'.
    ;; (default 'evil)
@@ -582,6 +585,10 @@ It should only modify the values of Spacemacs settings."
 
     ;; If non-nil then byte-compile some of Spacemacs files.
     dotspacemacs-byte-compile nil
+
+    (setq neo-theme 'nerd)
+
+    (go :variables go-backend 'lsp)
 
 
 ;; Do not write anything past this comment. This is where Emacs will
